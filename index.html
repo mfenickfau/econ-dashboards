@@ -235,7 +235,8 @@ table.data th:first-child, table.data td:first-child { text-align: left; }
   <section class="view" id="view-dash" hidden></section>
 </main>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.35.2/plotly.min.js"></script>
+<script src="vendor/plotly-2.35.2.min.js"></script>
+<script>if (!window.Plotly) { document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.35.2/plotly.min.js"><\/script>'); }</script>
 <script>
 (() => {
   "use strict";
@@ -518,6 +519,10 @@ table.data th:first-child, table.data td:first-child { text-align: left; }
     const computed = () => series.map((s, i) => s ? transform(s, st.transform, p.series[i].scale, rangeStart()) : null);
 
     function draw() {
+      if (!window.Plotly) {
+        plotDiv.replaceChildren(el("p", { class: "empty" }, "The chart library (Plotly) did not load, so this chart cannot be drawn. A browser extension or network filter may be blocking scripts on this site. Try a hard reload (Ctrl+Shift+R or Cmd+Shift+R), or open the Table view below."));
+        return;
+      }
       const th = plotTheme();
       const start = rangeStart();
       const tr = computed();
@@ -631,6 +636,10 @@ table.data th:first-child, table.data td:first-child { text-align: left; }
     route();
     addEventListener("hashchange", route);
   }
+  addEventListener("error", (e) => {
+    const bar = $("#errbar") || $("main").insertAdjacentElement("afterbegin", el("div", { id: "errbar", class: "empty", style: "color: var(--critical); text-align: left; padding: 8px 0" }));
+    bar.append(el("div", {}, "Page error: " + (e.message || e.type) + (e.filename ? ` (${e.filename.split("/").pop()}:${e.lineno})` : "")));
+  }, true);
   boot().catch(err => {
     $("main").prepend(el("p", { class: "empty" }, "Could not load the data files. If you opened index.html directly from disk, serve the folder over HTTP (for example: python3 -m http.server) or use the GitHub Pages link. ", el("span", { class: "mono" }, String(err))));
   });

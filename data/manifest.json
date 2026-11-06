@@ -1,7 +1,69 @@
 {
- "fetched_at": "2026-11-06T08:59:58Z",
+ "fetched_at": "2026-11-06T15:55:35Z",
  "series_count": 157,
- "failed": [],
+ "failed": [
+  "LRHUTTTTMXM156S",
+  "LRHUTTTTNLM156S",
+  "LRHUTTTTSEM156S",
+  "LRHUTTTTTRM156S",
+  "M1SL",
+  "M2SL",
+  "M2V",
+  "MANEMP",
+  "MEHOINUSA672N",
+  "MORTGAGE30US",
+  "MSPUS",
+  "MTSDS133FMS",
+  "MTSO133FMS",
+  "MTSR133FMS",
+  "NASDAQCOM",
+  "NETEXC",
+  "NETEXP",
+  "NONREVSL",
+  "OPHNFB",
+  "PAYEMS",
+  "PCDG",
+  "PCE",
+  "PCEC",
+  "PCECC96",
+  "PCEPI",
+  "PCEPILFE",
+  "PCESV",
+  "PCND",
+  "PERMIT",
+  "PPIACO",
+  "PSAVERT",
+  "REVOLSL",
+  "RHORUSQ156N",
+  "RSAFS",
+  "RSXFS",
+  "SAHMREALTIME",
+  "SP500",
+  "T10Y2Y",
+  "T10Y3M",
+  "TCU",
+  "TDSP",
+  "TOTALSL",
+  "U1RATE",
+  "U2RATE",
+  "U4RATE",
+  "U5RATE",
+  "U6RATE",
+  "ULCNFB",
+  "UMCSENT",
+  "UNRATE",
+  "USCONS",
+  "USEHS",
+  "USFIRE",
+  "USGOVT",
+  "USINFO",
+  "USLAH",
+  "USPBS",
+  "USREC",
+  "USTRADE",
+  "VIXCLS",
+  "W823RC1Q027SBEA"
+ ],
  "series": {
   "A091RC1Q027SBEA": {
    "first": "1947-01-01",
@@ -21,10 +83,10 @@
   },
   "AHETPI": {
    "first": "1964-01-01",
-   "last": "2026-09-01",
-   "last_value": 32.6,
-   "count": 753,
-   "prev_value": 32.53,
+   "last": "2026-10-01",
+   "last_value": 32.75,
+   "count": 754,
+   "prev_value": 32.63,
    "source": "https://fred.stlouisfed.org/series/AHETPI"
   },
   "APU0000702111": {
@@ -125,18 +187,18 @@
   },
   "CES0500000003": {
    "first": "2006-03-01",
-   "last": "2026-09-01",
-   "last_value": 37.81,
-   "count": 247,
-   "prev_value": 37.76,
+   "last": "2026-10-01",
+   "last_value": 38.0,
+   "count": 248,
+   "prev_value": 37.86,
    "source": "https://fred.stlouisfed.org/series/CES0500000003"
   },
   "CIVPART": {
    "first": "1948-01-01",
-   "last": "2026-09-01",
-   "last_value": 61.8,
-   "count": 944,
-   "prev_value": 61.6,
+   "last": "2026-10-01",
+   "last_value": 61.9,
+   "count": 945,
+   "prev_value": 61.8,
    "source": "https://fred.stlouisfed.org/series/CIVPART"
   },
   "CP": {
@@ -301,10 +363,10 @@
   },
   "EMRATIO": {
    "first": "1948-01-01",
-   "last": "2026-09-01",
-   "last_value": 59.2,
-   "count": 944,
-   "prev_value": 59.1,
+   "last": "2026-10-01",
+   "last_value": 59.3,
+   "count": 945,
+   "prev_value": 59.2,
    "source": "https://fred.stlouisfed.org/series/EMRATIO"
   },
   "FDEFX": {
@@ -581,122 +643,122 @@
   },
   "LNS11300060": {
    "first": "1948-01-01",
-   "last": "2026-09-01",
+   "last": "2026-10-01",
    "last_value": 83.7,
-   "count": 944,
-   "prev_value": 83.4,
+   "count": 945,
+   "prev_value": 83.7,
    "source": "https://fred.stlouisfed.org/series/LNS11300060"
   },
   "LNS14000001": {
    "first": "1948-01-01",
-   "last": "2026-09-01",
+   "last": "2026-10-01",
    "last_value": 4.3,
-   "count": 944,
-   "prev_value": 4.4,
+   "count": 945,
+   "prev_value": 4.3,
    "source": "https://fred.stlouisfed.org/series/LNS14000001"
   },
   "LNS14000002": {
    "first": "1948-01-01",
-   "last": "2026-09-01",
+   "last": "2026-10-01",
    "last_value": 4.0,
-   "count": 944,
-   "prev_value": 3.9,
+   "count": 945,
+   "prev_value": 4.0,
    "source": "https://fred.stlouisfed.org/series/LNS14000002"
   },
   "LNS14000003": {
    "first": "1954-01-01",
-   "last": "2026-09-01",
-   "last_value": 3.6,
-   "count": 872,
-   "prev_value": 3.7,
+   "last": "2026-10-01",
+   "last_value": 3.7,
+   "count": 873,
+   "prev_value": 3.6,
    "source": "https://fred.stlouisfed.org/series/LNS14000003"
   },
   "LNS14000006": {
    "first": "1972-01-01",
-   "last": "2026-09-01",
-   "last_value": 7.0,
-   "count": 656,
-   "prev_value": 6.0,
+   "last": "2026-10-01",
+   "last_value": 6.6,
+   "count": 657,
+   "prev_value": 7.0,
    "source": "https://fred.stlouisfed.org/series/LNS14000006"
   },
   "LNS14000009": {
    "first": "1973-03-01",
-   "last": "2026-09-01",
+   "last": "2026-10-01",
    "last_value": 4.7,
-   "count": 642,
-   "prev_value": 4.8,
+   "count": 643,
+   "prev_value": 4.7,
    "source": "https://fred.stlouisfed.org/series/LNS14000009"
   },
   "LNS14000012": {
    "first": "1948-01-01",
-   "last": "2026-09-01",
-   "last_value": 14.5,
-   "count": 944,
-   "prev_value": 14.1,
+   "last": "2026-10-01",
+   "last_value": 13.9,
+   "count": 945,
+   "prev_value": 14.5,
    "source": "https://fred.stlouisfed.org/series/LNS14000012"
   },
   "LNS14000036": {
    "first": "1948-01-01",
-   "last": "2026-09-01",
-   "last_value": 8.0,
-   "count": 944,
-   "prev_value": 7.1,
+   "last": "2026-10-01",
+   "last_value": 7.5,
+   "count": 945,
+   "prev_value": 8.0,
    "source": "https://fred.stlouisfed.org/series/LNS14000036"
   },
   "LNS14000089": {
    "first": "1948-01-01",
-   "last": "2026-09-01",
-   "last_value": 4.3,
-   "count": 944,
+   "last": "2026-10-01",
+   "last_value": 4.5,
+   "count": 945,
    "prev_value": 4.3,
    "source": "https://fred.stlouisfed.org/series/LNS14000089"
   },
   "LNS14024230": {
    "first": "1948-01-01",
-   "last": "2026-09-01",
-   "last_value": 2.6,
-   "count": 944,
-   "prev_value": 3.0,
+   "last": "2026-10-01",
+   "last_value": 2.8,
+   "count": 945,
+   "prev_value": 2.6,
    "source": "https://fred.stlouisfed.org/series/LNS14024230"
   },
   "LNS14027659": {
    "first": "1992-01-01",
-   "last": "2026-09-01",
-   "last_value": 4.3,
-   "count": 416,
-   "prev_value": 4.7,
+   "last": "2026-10-01",
+   "last_value": 5.8,
+   "count": 417,
+   "prev_value": 4.3,
    "source": "https://fred.stlouisfed.org/series/LNS14027659"
   },
   "LNS14027660": {
    "first": "1992-01-01",
-   "last": "2026-09-01",
-   "last_value": 4.4,
-   "count": 416,
+   "last": "2026-10-01",
+   "last_value": 3.8,
+   "count": 417,
    "prev_value": 4.4,
    "source": "https://fred.stlouisfed.org/series/LNS14027660"
   },
   "LNS14027662": {
    "first": "1992-01-01",
-   "last": "2026-09-01",
-   "last_value": 2.5,
-   "count": 416,
-   "prev_value": 2.7,
+   "last": "2026-10-01",
+   "last_value": 2.6,
+   "count": 417,
+   "prev_value": 2.5,
    "source": "https://fred.stlouisfed.org/series/LNS14027662"
   },
   "LNS14027689": {
    "first": "1992-01-01",
-   "last": "2026-09-01",
-   "last_value": 3.6,
-   "count": 416,
-   "prev_value": 3.7,
+   "last": "2026-10-01",
+   "last_value": 3.9,
+   "count": 417,
+   "prev_value": 3.6,
    "source": "https://fred.stlouisfed.org/series/LNS14027689"
   },
   "LNS14032183": {
    "first": "2003-01-01",
-   "last": "2026-09-01",
-   "last_value": 2.9,
-   "count": 284,
-   "prev_value": 3.2,
+   "last": "2026-10-01",
+   "last_value": 2.8,
+   "count": 285,
+   "prev_value": 2.9,
    "source": "https://fred.stlouisfed.org/series/LNS14032183"
   },
   "LRHUTTTTAUM156S": {
@@ -777,7 +839,8 @@
    "last_value": 2.747905,
    "count": 476,
    "prev_value": 2.712939,
-   "source": "https://fred.stlouisfed.org/series/LRHUTTTTMXM156S"
+   "source": "https://fred.stlouisfed.org/series/LRHUTTTTMXM156S",
+   "stale": true
   },
   "LRHUTTTTNLM156S": {
    "first": "1983-01-01",
@@ -785,7 +848,8 @@
    "last_value": 4.0,
    "count": 524,
    "prev_value": 4.0,
-   "source": "https://fred.stlouisfed.org/series/LRHUTTTTNLM156S"
+   "source": "https://fred.stlouisfed.org/series/LRHUTTTTNLM156S",
+   "stale": true
   },
   "LRHUTTTTSEM156S": {
    "first": "1983-01-01",
@@ -793,7 +857,8 @@
    "last_value": 8.9,
    "count": 524,
    "prev_value": 8.6,
-   "source": "https://fred.stlouisfed.org/series/LRHUTTTTSEM156S"
+   "source": "https://fred.stlouisfed.org/series/LRHUTTTTSEM156S",
+   "stale": true
   },
   "LRHUTTTTTRM156S": {
    "first": "2005-01-01",
@@ -801,7 +866,8 @@
    "last_value": 7.8,
    "count": 260,
    "prev_value": 8.1,
-   "source": "https://fred.stlouisfed.org/series/LRHUTTTTTRM156S"
+   "source": "https://fred.stlouisfed.org/series/LRHUTTTTTRM156S",
+   "stale": true
   },
   "M1SL": {
    "first": "1959-01-01",
@@ -809,7 +875,8 @@
    "last_value": 20061.2,
    "count": 813,
    "prev_value": 19967.3,
-   "source": "https://fred.stlouisfed.org/series/M1SL"
+   "source": "https://fred.stlouisfed.org/series/M1SL",
+   "stale": true
   },
   "M2SL": {
    "first": "1959-01-01",
@@ -817,7 +884,8 @@
    "last_value": 23413.9,
    "count": 813,
    "prev_value": 23300.9,
-   "source": "https://fred.stlouisfed.org/series/M2SL"
+   "source": "https://fred.stlouisfed.org/series/M2SL",
+   "stale": true
   },
   "M2V": {
    "first": "1959-01-01",
@@ -825,7 +893,8 @@
    "last_value": 1.417,
    "count": 271,
    "prev_value": 1.42,
-   "source": "https://fred.stlouisfed.org/series/M2V"
+   "source": "https://fred.stlouisfed.org/series/M2V",
+   "stale": true
   },
   "MANEMP": {
    "first": "1939-01-01",
@@ -833,7 +902,8 @@
    "last_value": 12652.0,
    "count": 1053,
    "prev_value": 12643.0,
-   "source": "https://fred.stlouisfed.org/series/MANEMP"
+   "source": "https://fred.stlouisfed.org/series/MANEMP",
+   "stale": true
   },
   "MEHOINUSA672N": {
    "first": "1984-01-01",
@@ -841,7 +911,8 @@
    "last_value": 87460.0,
    "count": 42,
    "prev_value": 85210.0,
-   "source": "https://fred.stlouisfed.org/series/MEHOINUSA672N"
+   "source": "https://fred.stlouisfed.org/series/MEHOINUSA672N",
+   "stale": true
   },
   "MORTGAGE30US": {
    "first": "1971-04-02",
@@ -849,7 +920,8 @@
    "last_value": 7.18,
    "count": 2902,
    "prev_value": 7.24,
-   "source": "https://fred.stlouisfed.org/series/MORTGAGE30US"
+   "source": "https://fred.stlouisfed.org/series/MORTGAGE30US",
+   "stale": true
   },
   "MSPUS": {
    "first": "1963-01-01",
@@ -857,7 +929,8 @@
    "last_value": 393300.0,
    "count": 255,
    "prev_value": 413500.0,
-   "source": "https://fred.stlouisfed.org/series/MSPUS"
+   "source": "https://fred.stlouisfed.org/series/MSPUS",
+   "stale": true
   },
   "MTSDS133FMS": {
    "first": "1980-10-01",
@@ -865,7 +938,8 @@
    "last_value": -26900.34710202,
    "count": 552,
    "prev_value": -166796.95227738,
-   "source": "https://fred.stlouisfed.org/series/MTSDS133FMS"
+   "source": "https://fred.stlouisfed.org/series/MTSDS133FMS",
+   "stale": true
   },
   "MTSO133FMS": {
    "first": "1980-10-01",
@@ -873,7 +947,8 @@
    "last_value": 584774.86634026,
    "count": 552,
    "prev_value": 526829.6881188,
-   "source": "https://fred.stlouisfed.org/series/MTSO133FMS"
+   "source": "https://fred.stlouisfed.org/series/MTSO133FMS",
+   "stale": true
   },
   "MTSR133FMS": {
    "first": "1980-10-01",
@@ -881,7 +956,8 @@
    "last_value": 557874.51923824,
    "count": 552,
    "prev_value": 360032.73584142,
-   "source": "https://fred.stlouisfed.org/series/MTSR133FMS"
+   "source": "https://fred.stlouisfed.org/series/MTSR133FMS",
+   "stale": true
   },
   "NASDAQCOM": {
    "first": "1971-02-05",
@@ -889,7 +965,8 @@
    "last_value": 24315.0,
    "count": 14057,
    "prev_value": 25736.51,
-   "source": "https://fred.stlouisfed.org/series/NASDAQCOM"
+   "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
+   "stale": true
   },
   "NETEXC": {
    "first": "1970-01-01",
@@ -897,7 +974,8 @@
    "last_value": -1320.337,
    "count": 227,
    "prev_value": -1099.295,
-   "source": "https://fred.stlouisfed.org/series/NETEXC"
+   "source": "https://fred.stlouisfed.org/series/NETEXC",
+   "stale": true
   },
   "NETEXP": {
    "first": "1947-01-01",
@@ -905,7 +983,8 @@
    "last_value": -1217.09,
    "count": 319,
    "prev_value": -880.263,
-   "source": "https://fred.stlouisfed.org/series/NETEXP"
+   "source": "https://fred.stlouisfed.org/series/NETEXP",
+   "stale": true
   },
   "NONREVSL": {
    "first": "1943-01-01",
@@ -913,7 +992,8 @@
    "last_value": 3844364.44,
    "count": 1004,
    "prev_value": 3831297.14,
-   "source": "https://fred.stlouisfed.org/series/NONREVSL"
+   "source": "https://fred.stlouisfed.org/series/NONREVSL",
+   "stale": true
   },
   "OPHNFB": {
    "first": "1947-01-01",
@@ -921,7 +1001,8 @@
    "last_value": 121.922,
    "count": 319,
    "prev_value": 120.862,
-   "source": "https://fred.stlouisfed.org/series/OPHNFB"
+   "source": "https://fred.stlouisfed.org/series/OPHNFB",
+   "stale": true
   },
   "PAYEMS": {
    "first": "1939-01-01",
@@ -929,7 +1010,8 @@
    "last_value": 159044.0,
    "count": 1053,
    "prev_value": 159015.0,
-   "source": "https://fred.stlouisfed.org/series/PAYEMS"
+   "source": "https://fred.stlouisfed.org/series/PAYEMS",
+   "stale": true
   },
   "PCDG": {
    "first": "1947-01-01",
@@ -937,7 +1019,8 @@
    "last_value": 2417.153,
    "count": 319,
    "prev_value": 2390.771,
-   "source": "https://fred.stlouisfed.org/series/PCDG"
+   "source": "https://fred.stlouisfed.org/series/PCDG",
+   "stale": true
   },
   "PCE": {
    "first": "1959-01-01",
@@ -945,7 +1028,8 @@
    "last_value": 22452.8,
    "count": 813,
    "prev_value": 22339.7,
-   "source": "https://fred.stlouisfed.org/series/PCE"
+   "source": "https://fred.stlouisfed.org/series/PCE",
+   "stale": true
   },
   "PCEC": {
    "first": "1947-01-01",
@@ -953,7 +1037,8 @@
    "last_value": 22312.825,
    "count": 319,
    "prev_value": 21993.177,
-   "source": "https://fred.stlouisfed.org/series/PCEC"
+   "source": "https://fred.stlouisfed.org/series/PCEC",
+   "stale": true
   },
   "PCECC96": {
    "first": "1947-01-01",
@@ -961,7 +1046,8 @@
    "last_value": 16944.918,
    "count": 319,
    "prev_value": 16788.685,
-   "source": "https://fred.stlouisfed.org/series/PCECC96"
+   "source": "https://fred.stlouisfed.org/series/PCECC96",
+   "stale": true
   },
   "PCEPI": {
    "first": "1959-01-01",
@@ -969,7 +1055,8 @@
    "last_value": 132.257,
    "count": 813,
    "prev_value": 131.611,
-   "source": "https://fred.stlouisfed.org/series/PCEPI"
+   "source": "https://fred.stlouisfed.org/series/PCEPI",
+   "stale": true
   },
   "PCEPILFE": {
    "first": "1959-01-01",
@@ -977,7 +1064,8 @@
    "last_value": 130.902,
    "count": 813,
    "prev_value": 130.489,
-   "source": "https://fred.stlouisfed.org/series/PCEPILFE"
+   "source": "https://fred.stlouisfed.org/series/PCEPILFE",
+   "stale": true
   },
   "PCESV": {
    "first": "1947-01-01",
@@ -985,7 +1073,8 @@
    "last_value": 15391.326,
    "count": 319,
    "prev_value": 15131.804,
-   "source": "https://fred.stlouisfed.org/series/PCESV"
+   "source": "https://fred.stlouisfed.org/series/PCESV",
+   "stale": true
   },
   "PCND": {
    "first": "1947-01-01",
@@ -993,7 +1082,8 @@
    "last_value": 4504.346,
    "count": 319,
    "prev_value": 4470.603,
-   "source": "https://fred.stlouisfed.org/series/PCND"
+   "source": "https://fred.stlouisfed.org/series/PCND",
+   "stale": true
   },
   "PERMIT": {
    "first": "1960-01-01",
@@ -1001,7 +1091,8 @@
    "last_value": 1398.0,
    "count": 801,
    "prev_value": 1403.0,
-   "source": "https://fred.stlouisfed.org/series/PERMIT"
+   "source": "https://fred.stlouisfed.org/series/PERMIT",
+   "stale": true
   },
   "PPIACO": {
    "first": "1913-01-01",
@@ -1009,7 +1100,8 @@
    "last_value": 295.708,
    "count": 1365,
    "prev_value": 287.735,
-   "source": "https://fred.stlouisfed.org/series/PPIACO"
+   "source": "https://fred.stlouisfed.org/series/PPIACO",
+   "stale": true
   },
   "PSAVERT": {
    "first": "1959-01-01",
@@ -1017,7 +1109,8 @@
    "last_value": 3.8,
    "count": 813,
    "prev_value": 4.0,
-   "source": "https://fred.stlouisfed.org/series/PSAVERT"
+   "source": "https://fred.stlouisfed.org/series/PSAVERT",
+   "stale": true
   },
   "REVOLSL": {
    "first": "1968-01-01",
@@ -1025,7 +1118,8 @@
    "last_value": 1352414.0,
    "count": 704,
    "prev_value": 1357200.7,
-   "source": "https://fred.stlouisfed.org/series/REVOLSL"
+   "source": "https://fred.stlouisfed.org/series/REVOLSL",
+   "stale": true
   },
   "RHORUSQ156N": {
    "first": "1965-01-01",
@@ -1033,7 +1127,8 @@
    "last_value": 65.5,
    "count": 247,
    "prev_value": 65.0,
-   "source": "https://fred.stlouisfed.org/series/RHORUSQ156N"
+   "source": "https://fred.stlouisfed.org/series/RHORUSQ156N",
+   "stale": true
   },
   "RSAFS": {
    "first": "1992-01-01",
@@ -1041,7 +1136,8 @@
    "last_value": 745021.0,
    "count": 417,
    "prev_value": 739322.0,
-   "source": "https://fred.stlouisfed.org/series/RSAFS"
+   "source": "https://fred.stlouisfed.org/series/RSAFS",
+   "stale": true
   },
   "RSXFS": {
    "first": "1992-01-01",
@@ -1049,7 +1145,8 @@
    "last_value": 652115.0,
    "count": 417,
    "prev_value": 647440.0,
-   "source": "https://fred.stlouisfed.org/series/RSXFS"
+   "source": "https://fred.stlouisfed.org/series/RSXFS",
+   "stale": true
   },
   "SAHMREALTIME": {
    "first": "1959-12-01",
@@ -1057,7 +1154,8 @@
    "last_value": 0.0,
    "count": 801,
    "prev_value": -0.07,
-   "source": "https://fred.stlouisfed.org/series/SAHMREALTIME"
+   "source": "https://fred.stlouisfed.org/series/SAHMREALTIME",
+   "stale": true
   },
   "SP500": {
    "first": "2016-11-07",
@@ -1065,7 +1163,8 @@
    "last_value": 7688.62,
    "count": 2512,
    "prev_value": 7568.92,
-   "source": "https://fred.stlouisfed.org/series/SP500"
+   "source": "https://fred.stlouisfed.org/series/SP500",
+   "stale": true
   },
   "T10Y2Y": {
    "first": "1976-06-01",
@@ -1073,7 +1172,8 @@
    "last_value": 0.38,
    "count": 12605,
    "prev_value": 0.32,
-   "source": "https://fred.stlouisfed.org/series/T10Y2Y"
+   "source": "https://fred.stlouisfed.org/series/T10Y2Y",
+   "stale": true
   },
   "T10Y3M": {
    "first": "1982-01-04",
@@ -1081,7 +1181,8 @@
    "last_value": 0.67,
    "count": 11214,
    "prev_value": 0.69,
-   "source": "https://fred.stlouisfed.org/series/T10Y3M"
+   "source": "https://fred.stlouisfed.org/series/T10Y3M",
+   "stale": true
   },
   "TCU": {
    "first": "1967-01-01",
@@ -1089,7 +1190,8 @@
    "last_value": 76.8504,
    "count": 717,
    "prev_value": 76.4184,
-   "source": "https://fred.stlouisfed.org/series/TCU"
+   "source": "https://fred.stlouisfed.org/series/TCU",
+   "stale": true
   },
   "TDSP": {
    "first": "2005-01-01",
@@ -1097,7 +1199,8 @@
    "last_value": 11.111439,
    "count": 86,
    "prev_value": 11.158929,
-   "source": "https://fred.stlouisfed.org/series/TDSP"
+   "source": "https://fred.stlouisfed.org/series/TDSP",
+   "stale": true
   },
   "TOTALSL": {
    "first": "1943-01-01",
@@ -1105,7 +1208,8 @@
    "last_value": 5196778.44,
    "count": 1004,
    "prev_value": 5188497.83,
-   "source": "https://fred.stlouisfed.org/series/TOTALSL"
+   "source": "https://fred.stlouisfed.org/series/TOTALSL",
+   "stale": true
   },
   "U1RATE": {
    "first": "1948-01-01",
@@ -1113,7 +1217,8 @@
    "last_value": 1.8,
    "count": 944,
    "prev_value": 1.8,
-   "source": "https://fred.stlouisfed.org/series/U1RATE"
+   "source": "https://fred.stlouisfed.org/series/U1RATE",
+   "stale": true
   },
   "U2RATE": {
    "first": "1967-01-01",
@@ -1121,7 +1226,8 @@
    "last_value": 1.9,
    "count": 716,
    "prev_value": 1.9,
-   "source": "https://fred.stlouisfed.org/series/U2RATE"
+   "source": "https://fred.stlouisfed.org/series/U2RATE",
+   "stale": true
   },
   "U4RATE": {
    "first": "1994-01-01",
@@ -1129,7 +1235,8 @@
    "last_value": 4.4,
    "count": 392,
    "prev_value": 4.4,
-   "source": "https://fred.stlouisfed.org/series/U4RATE"
+   "source": "https://fred.stlouisfed.org/series/U4RATE",
+   "stale": true
   },
   "U5RATE": {
    "first": "1994-01-01",
@@ -1137,7 +1244,8 @@
    "last_value": 5.0,
    "count": 392,
    "prev_value": 5.1,
-   "source": "https://fred.stlouisfed.org/series/U5RATE"
+   "source": "https://fred.stlouisfed.org/series/U5RATE",
+   "stale": true
   },
   "U6RATE": {
    "first": "1994-01-01",
@@ -1145,7 +1253,8 @@
    "last_value": 7.6,
    "count": 392,
    "prev_value": 7.7,
-   "source": "https://fred.stlouisfed.org/series/U6RATE"
+   "source": "https://fred.stlouisfed.org/series/U6RATE",
+   "stale": true
   },
   "ULCNFB": {
    "first": "1947-01-01",
@@ -1153,7 +1262,8 @@
    "last_value": 124.393,
    "count": 319,
    "prev_value": 124.6,
-   "source": "https://fred.stlouisfed.org/series/ULCNFB"
+   "source": "https://fred.stlouisfed.org/series/ULCNFB",
+   "stale": true
   },
   "UMCSENT": {
    "first": "1952-11-01",
@@ -1161,7 +1271,8 @@
    "last_value": 48.1,
    "count": 677,
    "prev_value": 51.7,
-   "source": "https://fred.stlouisfed.org/series/UMCSENT"
+   "source": "https://fred.stlouisfed.org/series/UMCSENT",
+   "stale": true
   },
   "UNRATE": {
    "first": "1948-01-01",
@@ -1169,7 +1280,8 @@
    "last_value": 4.2,
    "count": 944,
    "prev_value": 4.1,
-   "source": "https://fred.stlouisfed.org/series/UNRATE"
+   "source": "https://fred.stlouisfed.org/series/UNRATE",
+   "stale": true
   },
   "USCONS": {
    "first": "1939-01-01",
@@ -1177,7 +1289,8 @@
    "last_value": 8364.0,
    "count": 1053,
    "prev_value": 8353.0,
-   "source": "https://fred.stlouisfed.org/series/USCONS"
+   "source": "https://fred.stlouisfed.org/series/USCONS",
+   "stale": true
   },
   "USEHS": {
    "first": "1939-01-01",
@@ -1185,7 +1298,8 @@
    "last_value": 28005.0,
    "count": 1053,
    "prev_value": 27985.0,
-   "source": "https://fred.stlouisfed.org/series/USEHS"
+   "source": "https://fred.stlouisfed.org/series/USEHS",
+   "stale": true
   },
   "USFIRE": {
    "first": "1939-01-01",
@@ -1193,7 +1307,8 @@
    "last_value": 9082.0,
    "count": 1053,
    "prev_value": 9089.0,
-   "source": "https://fred.stlouisfed.org/series/USFIRE"
+   "source": "https://fred.stlouisfed.org/series/USFIRE",
+   "stale": true
   },
   "USGOVT": {
    "first": "1939-01-01",
@@ -1201,7 +1316,8 @@
    "last_value": 23327.0,
    "count": 1053,
    "prev_value": 23344.0,
-   "source": "https://fred.stlouisfed.org/series/USGOVT"
+   "source": "https://fred.stlouisfed.org/series/USGOVT",
+   "stale": true
   },
   "USINFO": {
    "first": "1939-01-01",
@@ -1209,7 +1325,8 @@
    "last_value": 2739.0,
    "count": 1053,
    "prev_value": 2749.0,
-   "source": "https://fred.stlouisfed.org/series/USINFO"
+   "source": "https://fred.stlouisfed.org/series/USINFO",
+   "stale": true
   },
   "USLAH": {
    "first": "1939-01-01",
@@ -1217,7 +1334,8 @@
    "last_value": 16969.0,
    "count": 1053,
    "prev_value": 16959.0,
-   "source": "https://fred.stlouisfed.org/series/USLAH"
+   "source": "https://fred.stlouisfed.org/series/USLAH",
+   "stale": true
   },
   "USPBS": {
    "first": "1939-01-01",
@@ -1225,7 +1343,8 @@
    "last_value": 22482.0,
    "count": 1053,
    "prev_value": 22491.0,
-   "source": "https://fred.stlouisfed.org/series/USPBS"
+   "source": "https://fred.stlouisfed.org/series/USPBS",
+   "stale": true
   },
   "USREC": {
    "first": "1854-12-01",
@@ -1233,7 +1352,8 @@
    "last_value": 0.0,
    "count": 2063,
    "prev_value": 0.0,
-   "source": "https://fred.stlouisfed.org/series/USREC"
+   "source": "https://fred.stlouisfed.org/series/USREC",
+   "stale": true
   },
   "USTRADE": {
    "first": "1939-01-01",
@@ -1241,7 +1361,8 @@
    "last_value": 15479.9,
    "count": 1053,
    "prev_value": 15474.1,
-   "source": "https://fred.stlouisfed.org/series/USTRADE"
+   "source": "https://fred.stlouisfed.org/series/USTRADE",
+   "stale": true
   },
   "VIXCLS": {
    "first": "1990-01-02",
@@ -1249,7 +1370,8 @@
    "last_value": 16.61,
    "count": 9310,
    "prev_value": 20.83,
-   "source": "https://fred.stlouisfed.org/series/VIXCLS"
+   "source": "https://fred.stlouisfed.org/series/VIXCLS",
+   "stale": true
   },
   "W823RC1Q027SBEA": {
    "first": "1947-01-01",
@@ -1257,7 +1379,8 @@
    "last_value": 1658.906,
    "count": 319,
    "prev_value": 1644.075,
-   "source": "https://fred.stlouisfed.org/series/W823RC1Q027SBEA"
+   "source": "https://fred.stlouisfed.org/series/W823RC1Q027SBEA",
+   "stale": true
   }
  }
 }

@@ -1,0 +1,1322 @@
+{
+ "site": {
+  "name": "Evergreen Econ Dashboards",
+  "tagline": "Public U.S. and global economic indicators, refreshed automatically from FRED.",
+  "repo": "mfenickfau/econ-dashboards",
+  "workflow_file": "update-data.yml"
+ },
+ "dashboards": [
+  {
+   "id": "gdp",
+   "group": "macro",
+   "topic": "Output",
+   "title": "U.S. GDP over time",
+   "blurb": "Nominal and real gross domestic product, GDP by component as a stacked area (consumption, investment, government, net exports), real growth, and the gap to potential output. Quarterly since 1947.",
+   "panels": [
+    {
+     "title": "GDP level",
+     "units": "Billions of dollars",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "GDP",
+       "label": "Nominal GDP"
+      },
+      {
+       "id": "GDPC1",
+       "label": "Real GDP (2017 dollars)"
+      },
+      {
+       "id": "GDPPOT",
+       "label": "Real potential GDP"
+      }
+     ]
+    },
+    {
+     "title": "GDP by component, nominal",
+     "units": "Billions of dollars, annual rate. Bands stack to total GDP; net exports are negative when imports exceed exports.",
+     "chart": "area",
+     "default_transform": "level",
+     "zero_line": true,
+     "series": [
+      {
+       "id": "NETEXP",
+       "label": "Net exports"
+      },
+      {
+       "id": "PCEC",
+       "label": "Personal consumption"
+      },
+      {
+       "id": "GPDI",
+       "label": "Private investment"
+      },
+      {
+       "id": "GCE",
+       "label": "Government spending"
+      }
+     ]
+    },
+    {
+     "title": "GDP by component, real",
+     "units": "Billions of 2017 dollars, annual rate (real net exports begin in 1970)",
+     "chart": "area",
+     "default_transform": "level",
+     "zero_line": true,
+     "series": [
+      {
+       "id": "NETEXC",
+       "label": "Net exports"
+      },
+      {
+       "id": "PCECC96",
+       "label": "Personal consumption"
+      },
+      {
+       "id": "GPDIC1",
+       "label": "Private investment"
+      },
+      {
+       "id": "GCEC1",
+       "label": "Government spending"
+      }
+     ]
+    },
+    {
+     "title": "Consumption by type",
+     "units": "Billions of dollars, annual rate",
+     "chart": "area",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "PCDG",
+       "label": "Durable goods"
+      },
+      {
+       "id": "PCND",
+       "label": "Nondurable goods"
+      },
+      {
+       "id": "PCESV",
+       "label": "Services"
+      }
+     ]
+    },
+    {
+     "title": "Real GDP growth",
+     "units": "Percent change from preceding quarter, annualized",
+     "default_transform": "level",
+     "zero_line": true,
+     "series": [
+      {
+       "id": "A191RL1Q225SBEA",
+       "label": "Real GDP growth"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "labor-underutilization",
+   "group": "macro",
+   "topic": "Labor",
+   "title": "Alternative measures of labor underutilization",
+   "blurb": "The BLS U-1 through U-6 unemployment rates. U-3 is the headline rate; U-6 adds discouraged, marginally attached, and involuntary part-time workers.",
+   "panels": [
+    {
+     "title": "U-1 to U-6",
+     "units": "Percent of labor force",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "U1RATE",
+       "label": "U-1: unemployed 15+ weeks"
+      },
+      {
+       "id": "U2RATE",
+       "label": "U-2: job losers"
+      },
+      {
+       "id": "UNRATE",
+       "label": "U-3: official rate"
+      },
+      {
+       "id": "U4RATE",
+       "label": "U-4: plus discouraged"
+      },
+      {
+       "id": "U5RATE",
+       "label": "U-5: plus marginally attached"
+      },
+      {
+       "id": "U6RATE",
+       "label": "U-6: plus part-time for economic reasons"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "unemployment-demographics",
+   "group": "macro",
+   "topic": "Labor",
+   "title": "Unemployment by gender, race, age, and education",
+   "blurb": "Civilian unemployment rates broken out by demographic group. Monthly, seasonally adjusted.",
+   "panels": [
+    {
+     "title": "By gender",
+     "units": "Percent",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "LNS14000001",
+       "label": "Men, 16+"
+      },
+      {
+       "id": "LNS14000002",
+       "label": "Women, 16+"
+      },
+      {
+       "id": "UNRATE",
+       "label": "All, 16+"
+      }
+     ]
+    },
+    {
+     "title": "By race and ethnicity",
+     "units": "Percent",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "LNS14000003",
+       "label": "White"
+      },
+      {
+       "id": "LNS14000006",
+       "label": "Black or African American"
+      },
+      {
+       "id": "LNS14000009",
+       "label": "Hispanic or Latino"
+      },
+      {
+       "id": "LNS14032183",
+       "label": "Asian"
+      }
+     ]
+    },
+    {
+     "title": "By age",
+     "units": "Percent",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "LNS14000012",
+       "label": "16 to 19"
+      },
+      {
+       "id": "LNS14000036",
+       "label": "20 to 24"
+      },
+      {
+       "id": "LNS14000089",
+       "label": "25 to 54"
+      },
+      {
+       "id": "LNS14024230",
+       "label": "55 and over"
+      }
+     ]
+    },
+    {
+     "title": "By education (25+)",
+     "units": "Percent",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "LNS14027659",
+       "label": "Less than high school"
+      },
+      {
+       "id": "LNS14027660",
+       "label": "High school, no college"
+      },
+      {
+       "id": "LNS14027689",
+       "label": "Some college or associate"
+      },
+      {
+       "id": "LNS14027662",
+       "label": "Bachelor's degree or higher"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "labor-market",
+   "group": "macro",
+   "topic": "Labor",
+   "title": "U.S. labor market",
+   "blurb": "Unemployment, participation, payroll employment, job openings, and weekly jobless claims.",
+   "panels": [
+    {
+     "title": "Rates",
+     "units": "Percent",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "UNRATE",
+       "label": "Unemployment rate"
+      },
+      {
+       "id": "CIVPART",
+       "label": "Labor force participation"
+      },
+      {
+       "id": "LNS11300060",
+       "label": "Prime-age (25-54) participation"
+      },
+      {
+       "id": "EMRATIO",
+       "label": "Employment-population ratio"
+      }
+     ]
+    },
+    {
+     "title": "Nonfarm payrolls",
+     "units": "Thousands of persons",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "PAYEMS",
+       "label": "Total nonfarm employment"
+      }
+     ]
+    },
+    {
+     "title": "Openings and claims",
+     "units": "Thousands",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "JTSJOL",
+       "label": "Job openings (JOLTS)"
+      },
+      {
+       "id": "ICSA",
+       "label": "Initial jobless claims (weekly)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "money-supply",
+   "group": "macro",
+   "topic": "Money & rates",
+   "title": "U.S. money supply",
+   "blurb": "M1, M2, and the monetary base, plus the velocity of M2. Monthly since 1959.",
+   "panels": [
+    {
+     "title": "Money stock",
+     "units": "Billions of dollars",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "M1SL",
+       "label": "M1"
+      },
+      {
+       "id": "M2SL",
+       "label": "M2"
+      },
+      {
+       "id": "BOGMBASE",
+       "label": "Monetary base",
+       "scale": 0.001
+      }
+     ]
+    },
+    {
+     "title": "Velocity of M2",
+     "units": "Ratio of nominal GDP to M2",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "M2V",
+       "label": "M2 velocity"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "interest-rates",
+   "group": "macro",
+   "topic": "Money & rates",
+   "title": "Interest rates and the yield curve",
+   "blurb": "The federal funds rate, Treasury yields, mortgage rates, and the 10-year minus 2-year spread that often precedes recessions.",
+   "panels": [
+    {
+     "title": "Policy and market rates",
+     "units": "Percent",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "FEDFUNDS",
+       "label": "Federal funds effective rate"
+      },
+      {
+       "id": "DGS2",
+       "label": "2-year Treasury"
+      },
+      {
+       "id": "DGS10",
+       "label": "10-year Treasury"
+      },
+      {
+       "id": "DGS30",
+       "label": "30-year Treasury"
+      },
+      {
+       "id": "MORTGAGE30US",
+       "label": "30-year fixed mortgage"
+      }
+     ]
+    },
+    {
+     "title": "Yield curve spread",
+     "units": "Percentage points",
+     "default_transform": "level",
+     "zero_line": true,
+     "series": [
+      {
+       "id": "T10Y2Y",
+       "label": "10-year minus 2-year"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "inflation",
+   "group": "macro",
+   "topic": "Prices",
+   "title": "Inflation",
+   "blurb": "Consumer price index, core CPI, PCE, and core PCE (the Fed's preferred measure), shown as year-over-year change by default.",
+   "panels": [
+    {
+     "title": "Price indexes",
+     "units": "Index (1982-84=100 for CPI; 2017=100 for PCE)",
+     "default_transform": "yoy",
+     "series": [
+      {
+       "id": "CPIAUCSL",
+       "label": "CPI, all items"
+      },
+      {
+       "id": "CPILFESL",
+       "label": "Core CPI (ex food and energy)"
+      },
+      {
+       "id": "PCEPI",
+       "label": "PCE price index"
+      },
+      {
+       "id": "PCEPILFE",
+       "label": "Core PCE"
+      }
+     ]
+    },
+    {
+     "title": "Producer prices",
+     "units": "Index (1982=100)",
+     "default_transform": "yoy",
+     "series": [
+      {
+       "id": "PPIACO",
+       "label": "PPI, all commodities"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stock-indices",
+   "group": "macro",
+   "topic": "Markets",
+   "title": "Stock indices",
+   "blurb": "S&P 500, Dow Jones Industrial Average, and NASDAQ Composite, indexed to a common starting point, with the VIX volatility index. FRED licensing limits the S&P 500 and Dow to the last ten years; the NASDAQ Composite runs from 1971.",
+   "panels": [
+    {
+     "title": "Major indices",
+     "units": "Index value",
+     "default_transform": "index",
+     "series": [
+      {
+       "id": "SP500",
+       "label": "S&P 500"
+      },
+      {
+       "id": "DJIA",
+       "label": "Dow Jones Industrial Average"
+      },
+      {
+       "id": "NASDAQCOM",
+       "label": "NASDAQ Composite"
+      }
+     ]
+    },
+    {
+     "title": "Volatility",
+     "units": "VIX index",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "VIXCLS",
+       "label": "CBOE VIX"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fiscal",
+   "group": "macro",
+   "topic": "Government",
+   "title": "U.S. taxes, spending, and budget deficits",
+   "blurb": "Federal receipts, outlays, the surplus or deficit, and federal debt, in dollars and as a share of GDP. Fiscal years since 1901.",
+   "panels": [
+    {
+     "title": "Receipts, outlays, and balance",
+     "units": "Billions of dollars",
+     "default_transform": "level",
+     "zero_line": true,
+     "series": [
+      {
+       "id": "FYFR",
+       "label": "Federal receipts",
+       "scale": 0.001
+      },
+      {
+       "id": "FYONET",
+       "label": "Federal outlays",
+       "scale": 0.001
+      },
+      {
+       "id": "FYFSD",
+       "label": "Surplus or deficit",
+       "scale": 0.001
+      }
+     ]
+    },
+    {
+     "title": "As a share of GDP",
+     "units": "Percent of GDP",
+     "default_transform": "level",
+     "zero_line": true,
+     "series": [
+      {
+       "id": "FYFRGDA188S",
+       "label": "Receipts"
+      },
+      {
+       "id": "FYONGDA188S",
+       "label": "Outlays"
+      },
+      {
+       "id": "FYFSGDA188S",
+       "label": "Surplus or deficit"
+      }
+     ]
+    },
+    {
+     "title": "Federal debt",
+     "units": "Percent of GDP",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "GFDEGDQ188S",
+       "label": "Total public debt, % of GDP"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "federal-outlays",
+   "group": "macro",
+   "topic": "Government",
+   "title": "Federal government outlays",
+   "blurb": "Monthly Treasury Statement receipts, outlays, and deficit, plus the big quarterly spending categories: defense, nondefense, interest, and social benefits.",
+   "panels": [
+    {
+     "title": "Monthly Treasury Statement",
+     "units": "Millions of dollars",
+     "default_transform": "level",
+     "zero_line": true,
+     "series": [
+      {
+       "id": "MTSR133FMS",
+       "label": "Receipts"
+      },
+      {
+       "id": "MTSO133FMS",
+       "label": "Outlays"
+      },
+      {
+       "id": "MTSDS133FMS",
+       "label": "Surplus or deficit"
+      }
+     ]
+    },
+    {
+     "title": "Spending categories",
+     "units": "Billions of dollars, annual rate",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "FDEFX",
+       "label": "National defense"
+      },
+      {
+       "id": "FNDEFX",
+       "label": "Nondefense"
+      },
+      {
+       "id": "A091RC1Q027SBEA",
+       "label": "Interest payments"
+      },
+      {
+       "id": "W823RC1Q027SBEA",
+       "label": "Social benefits to persons"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "global-unemployment",
+   "group": "macro",
+   "topic": "International",
+   "title": "Unemployment by country",
+   "blurb": "Harmonized OECD unemployment rates for major economies, so countries can be compared on one definition.",
+   "panels": [
+    {
+     "title": "G7 and Australia",
+     "units": "Percent",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "UNRATE",
+       "label": "United States (BLS)"
+      },
+      {
+       "id": "LRHUTTTTCAM156S",
+       "label": "Canada"
+      },
+      {
+       "id": "LRHUTTTTGBM156S",
+       "label": "United Kingdom"
+      },
+      {
+       "id": "LRHUTTTTDEM156S",
+       "label": "Germany"
+      },
+      {
+       "id": "LRHUTTTTFRM156S",
+       "label": "France"
+      },
+      {
+       "id": "LRHUTTTTITM156S",
+       "label": "Italy"
+      },
+      {
+       "id": "LRHUTTTTJPM156S",
+       "label": "Japan"
+      },
+      {
+       "id": "LRHUTTTTAUM156S",
+       "label": "Australia"
+      }
+     ]
+    },
+    {
+     "title": "Other OECD economies",
+     "units": "Percent",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "LRHUTTTTKRM156S",
+       "label": "South Korea"
+      },
+      {
+       "id": "LRHUTTTTMXM156S",
+       "label": "Mexico"
+      },
+      {
+       "id": "LRHUTTTTESM156S",
+       "label": "Spain"
+      },
+      {
+       "id": "LRHUTTTTNLM156S",
+       "label": "Netherlands"
+      },
+      {
+       "id": "LRHUTTTTSEM156S",
+       "label": "Sweden"
+      },
+      {
+       "id": "LRHUTTTTTRM156S",
+       "label": "Turkey"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "global-inflation",
+   "group": "macro",
+   "topic": "International",
+   "title": "Inflation by country",
+   "blurb": "Consumer price inflation across major economies. Monthly harmonized (HICP) inflation for Europe from Eurostat, and annual inflation worldwide from the World Bank. Both feeds are maintained on FRED; the old OECD monthly feed stopped updating in 2025.",
+   "panels": [
+    {
+     "title": "Europe, monthly (HICP)",
+     "units": "Harmonized index (2015=100)",
+     "default_transform": "yoy",
+     "series": [
+      {
+       "id": "CP0000EZ19M086NEST",
+       "label": "Euro area"
+      },
+      {
+       "id": "CP0000DEM086NEST",
+       "label": "Germany"
+      },
+      {
+       "id": "CP0000FRM086NEST",
+       "label": "France"
+      },
+      {
+       "id": "CP0000ITM086NEST",
+       "label": "Italy"
+      },
+      {
+       "id": "CP0000ESM086NEST",
+       "label": "Spain"
+      },
+      {
+       "id": "CP0000NLM086NEST",
+       "label": "Netherlands"
+      }
+     ]
+    },
+    {
+     "title": "World, annual (World Bank)",
+     "units": "Percent change, annual average",
+     "default_transform": "level",
+     "zero_line": true,
+     "series": [
+      {
+       "id": "FPCPITOTLZGUSA",
+       "label": "United States"
+      },
+      {
+       "id": "FPCPITOTLZGCAN",
+       "label": "Canada"
+      },
+      {
+       "id": "FPCPITOTLZGGBR",
+       "label": "United Kingdom"
+      },
+      {
+       "id": "FPCPITOTLZGJPN",
+       "label": "Japan"
+      },
+      {
+       "id": "FPCPITOTLZGDEU",
+       "label": "Germany"
+      },
+      {
+       "id": "FPCPITOTLZGKOR",
+       "label": "South Korea"
+      },
+      {
+       "id": "FPCPITOTLZGMEX",
+       "label": "Mexico"
+      },
+      {
+       "id": "FPCPITOTLZGCHN",
+       "label": "China"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "trade-dollar",
+   "group": "macro",
+   "topic": "International",
+   "title": "Trade balance and the dollar",
+   "blurb": "Monthly exports, imports, and the goods-and-services trade balance, with the trade-weighted dollar index.",
+   "panels": [
+    {
+     "title": "Trade flows",
+     "units": "Millions of dollars",
+     "default_transform": "level",
+     "zero_line": true,
+     "series": [
+      {
+       "id": "BOPTEXP",
+       "label": "Exports"
+      },
+      {
+       "id": "BOPTIMP",
+       "label": "Imports"
+      },
+      {
+       "id": "BOPGSTB",
+       "label": "Trade balance"
+      }
+     ]
+    },
+    {
+     "title": "Dollar index",
+     "units": "Index (Jan 2006=100)",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "DTWEXBGS",
+       "label": "Trade-weighted dollar, broad"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "group": "macro",
+   "topic": "Output",
+   "title": "Industrial production and capacity",
+   "blurb": "Total and manufacturing industrial production, and how much of installed capacity is in use.",
+   "panels": [
+    {
+     "title": "Industrial production",
+     "units": "Index (2017=100)",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "INDPRO",
+       "label": "Total industrial production"
+      },
+      {
+       "id": "IPMAN",
+       "label": "Manufacturing"
+      }
+     ]
+    },
+    {
+     "title": "Capacity utilization",
+     "units": "Percent of capacity",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "TCU",
+       "label": "Total industry"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "recession-signals",
+   "group": "macro",
+   "topic": "Output",
+   "title": "Recession signals",
+   "blurb": "Indicators that tend to turn before the economy does: the yield curve, the Sahm rule unemployment trigger, leading-index proxies, and NBER recession dating.",
+   "panels": [
+    {
+     "title": "Sahm rule",
+     "units": "Percentage points (0.5 or more signals recession start)",
+     "default_transform": "level",
+     "zero_line": true,
+     "series": [
+      {
+       "id": "SAHMREALTIME",
+       "label": "Sahm rule recession indicator (real-time)"
+      }
+     ]
+    },
+    {
+     "title": "Yield curve",
+     "units": "Percentage points",
+     "default_transform": "level",
+     "zero_line": true,
+     "series": [
+      {
+       "id": "T10Y2Y",
+       "label": "10-year minus 2-year"
+      },
+      {
+       "id": "T10Y3M",
+       "label": "10-year minus 3-month"
+      }
+     ]
+    },
+    {
+     "title": "Recession indicator",
+     "units": "1 = NBER recession",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "USREC",
+       "label": "NBER recession periods"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "household-income",
+   "group": "micro",
+   "topic": "Households",
+   "title": "Household income and saving",
+   "blurb": "Real median household income, real disposable income, and the personal saving rate.",
+   "panels": [
+    {
+     "title": "Real median household income",
+     "units": "2024 dollars (annual)",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "MEHOINUSA672N",
+       "label": "Real median household income"
+      }
+     ]
+    },
+    {
+     "title": "Real disposable personal income",
+     "units": "Billions of 2017 dollars, annual rate",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "DSPIC96",
+       "label": "Real disposable personal income"
+      }
+     ]
+    },
+    {
+     "title": "Personal saving rate",
+     "units": "Percent of disposable income",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "PSAVERT",
+       "label": "Personal saving rate"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wages",
+   "group": "micro",
+   "topic": "Households",
+   "title": "Wages and earnings",
+   "blurb": "Average hourly earnings for all private workers and for production and nonsupervisory workers, and real median weekly earnings. Default view is year-over-year growth.",
+   "panels": [
+    {
+     "title": "Average hourly earnings",
+     "units": "Dollars per hour",
+     "default_transform": "yoy",
+     "series": [
+      {
+       "id": "CES0500000003",
+       "label": "All private employees"
+      },
+      {
+       "id": "AHETPI",
+       "label": "Production and nonsupervisory"
+      }
+     ]
+    },
+    {
+     "title": "Real median weekly earnings",
+     "units": "1982-84 dollars",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "LES1252881600Q",
+       "label": "Full-time wage and salary workers, 16+"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "everyday-prices",
+   "group": "micro",
+   "topic": "Prices",
+   "title": "Everyday prices",
+   "blurb": "What households actually pay: gasoline, eggs, milk, bread, ground beef, chicken, and electricity. U.S. city average prices from the BLS.",
+   "panels": [
+    {
+     "title": "Gasoline",
+     "units": "Dollars per gallon, regular",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "GASREGW",
+       "label": "Regular gasoline (weekly)"
+      }
+     ]
+    },
+    {
+     "title": "Grocery staples",
+     "units": "Dollars per unit",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "APU0000708111",
+       "label": "Eggs, grade A large (dozen)"
+      },
+      {
+       "id": "APU0000709112",
+       "label": "Milk, whole (gallon)"
+      },
+      {
+       "id": "APU0000702111",
+       "label": "Bread, white (pound)"
+      },
+      {
+       "id": "APU0000703112",
+       "label": "Ground beef (pound)"
+      },
+      {
+       "id": "APU0000706111",
+       "label": "Chicken, whole (pound)"
+      }
+     ]
+    },
+    {
+     "title": "Electricity",
+     "units": "Dollars per kilowatt-hour",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "APU000072610",
+       "label": "Electricity"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "housing",
+   "group": "micro",
+   "topic": "Housing",
+   "title": "Housing",
+   "blurb": "Home prices, median sales price, housing starts and permits, and the homeownership rate.",
+   "panels": [
+    {
+     "title": "Home price index",
+     "units": "Case-Shiller national index (Jan 2000=100)",
+     "default_transform": "yoy",
+     "series": [
+      {
+       "id": "CSUSHPINSA",
+       "label": "Case-Shiller U.S. national"
+      }
+     ]
+    },
+    {
+     "title": "Median sales price",
+     "units": "Dollars",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "MSPUS",
+       "label": "Median sales price of houses sold"
+      }
+     ]
+    },
+    {
+     "title": "Starts and permits",
+     "units": "Thousands of units, annual rate",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "HOUST",
+       "label": "Housing starts"
+      },
+      {
+       "id": "PERMIT",
+       "label": "Building permits"
+      }
+     ]
+    },
+    {
+     "title": "Homeownership",
+     "units": "Percent of households",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "RHORUSQ156N",
+       "label": "Homeownership rate"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "consumer-credit",
+   "group": "micro",
+   "topic": "Households",
+   "title": "Household debt and credit",
+   "blurb": "Consumer credit outstanding, household debt relative to GDP and income, and delinquency rates on cards and mortgages.",
+   "panels": [
+    {
+     "title": "Consumer credit outstanding",
+     "units": "Billions of dollars",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "TOTALSL",
+       "label": "Total consumer credit"
+      },
+      {
+       "id": "REVOLSL",
+       "label": "Revolving (mostly cards)"
+      },
+      {
+       "id": "NONREVSL",
+       "label": "Nonrevolving (auto, student)"
+      }
+     ]
+    },
+    {
+     "title": "Debt burden",
+     "units": "Percent",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "HDTGPDUSQ163N",
+       "label": "Household debt, % of GDP"
+      },
+      {
+       "id": "TDSP",
+       "label": "Debt service, % of disposable income"
+      }
+     ]
+    },
+    {
+     "title": "Delinquency rates",
+     "units": "Percent of balances, all commercial banks",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "DRCCLACBS",
+       "label": "Credit cards"
+      },
+      {
+       "id": "DRSFRMACBS",
+       "label": "Single-family mortgages"
+      },
+      {
+       "id": "DRALACBS",
+       "label": "All loans"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "consumer-spending",
+   "group": "micro",
+   "topic": "Households",
+   "title": "Consumer sentiment and spending",
+   "blurb": "University of Michigan consumer sentiment, retail sales, and personal consumption expenditures.",
+   "panels": [
+    {
+     "title": "Consumer sentiment",
+     "units": "Index (1966 Q1=100)",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "UMCSENT",
+       "label": "Consumer sentiment"
+      }
+     ]
+    },
+    {
+     "title": "Retail sales",
+     "units": "Millions of dollars",
+     "default_transform": "yoy",
+     "series": [
+      {
+       "id": "RSAFS",
+       "label": "Retail and food services"
+      },
+      {
+       "id": "RSXFS",
+       "label": "Retail excluding food services"
+      }
+     ]
+    },
+    {
+     "title": "Personal consumption",
+     "units": "Billions of dollars, annual rate",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "PCE",
+       "label": "Personal consumption expenditures"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "business",
+   "group": "micro",
+   "topic": "Business",
+   "title": "Business conditions",
+   "blurb": "Corporate profits, new business applications, business lending, and inventories.",
+   "panels": [
+    {
+     "title": "Corporate profits",
+     "units": "Billions of dollars, annual rate",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "CP",
+       "label": "Corporate profits after tax"
+      },
+      {
+       "id": "CPATAX",
+       "label": "After tax, with IVA and CCAdj"
+      }
+     ]
+    },
+    {
+     "title": "Business applications",
+     "units": "Number, seasonally adjusted",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "BABATOTALSAUS",
+       "label": "Business applications"
+      }
+     ]
+    },
+    {
+     "title": "Business lending",
+     "units": "Billions of dollars",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "BUSLOANS",
+       "label": "Commercial and industrial loans"
+      }
+     ]
+    },
+    {
+     "title": "Inventories to sales",
+     "units": "Ratio",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "ISRATIO",
+       "label": "Total business inventories/sales"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sector-employment",
+   "group": "micro",
+   "topic": "Labor",
+   "title": "Employment by sector",
+   "blurb": "Payroll employment in major industries, indexed to a common start so growth can be compared across sectors of very different size.",
+   "panels": [
+    {
+     "title": "Private sectors",
+     "units": "Thousands of employees",
+     "default_transform": "index",
+     "series": [
+      {
+       "id": "MANEMP",
+       "label": "Manufacturing"
+      },
+      {
+       "id": "USCONS",
+       "label": "Construction"
+      },
+      {
+       "id": "USTRADE",
+       "label": "Retail trade"
+      },
+      {
+       "id": "USEHS",
+       "label": "Education and health"
+      },
+      {
+       "id": "USPBS",
+       "label": "Professional and business services"
+      },
+      {
+       "id": "USLAH",
+       "label": "Leisure and hospitality"
+      },
+      {
+       "id": "USINFO",
+       "label": "Information"
+      },
+      {
+       "id": "USFIRE",
+       "label": "Financial activities"
+      }
+     ]
+    },
+    {
+     "title": "Government",
+     "units": "Thousands of employees",
+     "default_transform": "level",
+     "series": [
+      {
+       "id": "USGOVT",
+       "label": "Government"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "productivity",
+   "group": "micro",
+   "topic": "Business",
+   "title": "Productivity and labor costs",
+   "blurb": "Output per hour and unit labor costs in the nonfarm business sector, shown as year-over-year growth.",
+   "panels": [
+    {
+     "title": "Nonfarm business sector",
+     "units": "Index (2017=100)",
+     "default_transform": "yoy",
+     "series": [
+      {
+       "id": "OPHNFB",
+       "label": "Output per hour"
+      },
+      {
+       "id": "ULCNFB",
+       "label": "Unit labor costs"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

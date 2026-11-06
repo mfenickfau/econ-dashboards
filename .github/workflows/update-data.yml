@@ -7,7 +7,6 @@ on:
   workflow_dispatch: {}      # the "Refresh data now" button in the GitHub Actions tab
   push:
     branches: [main]
-    paths: [catalog.json, scripts/**, .github/workflows/update-data.yml]
 
 permissions:
   contents: write
